@@ -1,0 +1,584 @@
+
+                                 SE-HTML and CSS
+
+1).Define the terms: Website, Webpage, Web browser, Web server, HTML,
+CSS
+
+1. Website:
+   A website is a collection of related web pages and other digital content that are typically hosted on a single domain or subdomain. Websites are accessible via the internet and are used to share information, provide services, or promote businesses and organizations.
+
+2. Webpage:
+   A webpage is a single document or file that is part of a website. It is displayed in a web browser and can contain various types of content, such as text, images, multimedia, links, and more. Webpages are written in languages like HTML and may be styled using CSS.
+
+3. Web Browser:
+   A web browser is a software application that allows users to access and view webpages on the internet. It interprets and renders the content of webpages, enabling users to navigate websites, interact with web-based applications, and consume information on the World Wide Web. Common web browsers include Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari.
+
+4. Web Server:
+   A web server is a computer or software that stores and serves web content to users over the internet. When a user requests a webpage, the web server processes the request, retrieves the requested content, and sends it to the user's web browser. It plays a central role in delivering websites to users.
+
+5. HTML (Hypertext Markup Language):
+   HTML is a markup language used to create the structure and content of webpages. It consists of a set of elements and tags that define how text, images, links, and other elements are displayed on a webpage. HTML is essential for building the core structure of web content and is interpreted by web browsers to render webpages.
+
+6. CSS (Cascading Style Sheets):
+   CSS is a style sheet language used to control the presentation and layout of webpages written in HTML. It allows web developers to specify the visual aspects of a webpage, such as fonts, colors, spacing, and positioning. CSS separates the content (defined by HTML) from its visual styling, making it easier to change the appearance of a webpage without altering its underlying structure.
+
+2).Create a webpage to show “This is my first HTML page”
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Page</title>
+</head>
+<body>
+    <h1>This is my first HTML page</h1>
+</body>
+</html>
+
+3).Display top 10 IT companies list in html webpage
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top 10 IT Companies</title>
+</head>
+<body>
+    <h1>Top 10 IT Companies</h1>
+    <ol>
+        <li>Microsoft</li>
+        <li>Apple</li>
+        <li>Amazon</li>
+        <li>Alphabet Inc. (Google)</li>
+        <li>Facebook</li>
+        <li>IBM</li>
+        <li>Intel</li>
+        <li>Oracle</li>
+        <li>Samsung</li>
+        <li>Taiwan Semiconductor Manufacturing Company (TSMC)</li>
+    </ol>
+</body>
+</html>
+
+4).Create a dropdown list
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown List Example</title>
+</head>
+<body>
+    <h1>Select Your Favorite Color</h1>
+    <label for="colors">Choose a color:</label>
+    <select id="colors">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="purple">Purple</option>
+    </select>
+</body>
+</html>
+
+
+5).Create a Table Of college Management system using row span & col span
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Management System</title>
+</head>
+<body>
+    <h1>College Management System</h1>
+    <table border="1">
+        <tr>
+            <th>Department</th>
+            <th colspan="2">Courses</th>
+            <th rowspan="2">Total Students</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Code</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Computer Science</td>
+            <td>CS101</td>
+            <td>Programming</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>CS102</td>
+            <td>Database</td>
+        </tr>
+        <tr>
+            <td>CS103</td>
+            <td>Web Development</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Electrical Engineering</td>
+            <td>EE201</td>
+            <td>Circuit Design</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>EE202</td>
+            <td>Power Systems</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+6).Create below table using HTML table tags
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Table</title>
+</head>
+<body>
+    <h1>Sample Table</h1>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+7).Create Registration form using HTML, CSS
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            width: 100%;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+8). In how many ways can a CSS be integrated as a web page?
+CSS (Cascading Style Sheets) can be integrated into a web page in several ways, depending on your project's needs and your preferences. Here are some common methods for integrating CSS into web pages:
+
+1.Inline Styles:
+   - CSS styles can be applied directly within HTML elements using the `style` attribute. For example:
+   `html
+   <p style="color: blue; font-size: 16px;">This is a blue text with a font size of 16px.</p>
+   
+
+2.Internal or Embedded Styles:
+   - CSS can be placed inside the `<style>` element within the HTML document's `<head>`. This method allows you to define styles for the entire document.
+   html
+   <head>
+       <style>
+           p {
+               color: blue;
+               font-size: 16px;
+           }
+       </style>
+   </head>
+   <body>
+       <p>This is a blue text with a font size of 16px.</p>
+   </body>
+   
+
+3.External Styles:
+   - The recommended and most common method is to create an external CSS file with a `.css` extension and link it to your HTML document using the `<link>` element within the `<head>` of the HTML document.
+   html
+   <head>
+       <link rel="stylesheet" type="text/css" href="styles.css">
+   </head>
+   
+
+4.Imported Styles:
+   - CSS styles can also be imported into another CSS file using the `@import` rule. This is less common but allows you to split your styles into multiple CSS files for organization.
+   css
+   /* styles.css */
+   @import url('other-styles.css');
+   
+
+5. Using CSS Frameworks:
+   - You can integrate CSS by using pre-built CSS frameworks like Bootstrap, Foundation, or Materialize. These frameworks provide a set of predefined styles and classes that you can apply to your HTML elements.
+
+6. CSS within HTML using JavaScript:
+   - JavaScript can be used to apply CSS styles dynamically to HTML elements by modifying the element's `style` property.
+
+9).Create simple three pages using External CSS, Internal CSS, and Inline
+CSS.
+-->External CSS Page (Using an External CSS File):**
+
+HTML (external.html):
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 class="heading">External CSS Page</h1>
+    <p class="text">This page uses an external CSS file for styling.</p>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+/* styles.css */
+.heading {
+    color: blue;
+    font-size: 24px;
+}
+
+.text {
+    color: green;
+}
+
+
+-->Internal CSS Page (Using an Internal <style> Element):
+
+-->HTML (internal.html):
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .heading {
+            color: red;
+            font-size: 24px;
+        }
+
+        .text {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Internal CSS Page</h1>
+    <p class="text">This page uses internal CSS for styling.</p>
+</body>
+</html>
+
+
+-->Inline CSS Page (Using Inline `style` Attributes):
+
+HTML (inline.html):
+html
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 style="color: orange; font-size: 24px;">Inline CSS Page</h1>
+    <p style="color: brown;">This page uses inline CSS for styling.</p>
+</body>
+</html>
+
+10).Create below page using HTML CSS
+/*html*/
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Individual Registration</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Individual Registration</h1>
+        <form>
+            <div class="section-heading">User Particulars</div>
+            <div class="form-group">
+                <label for="login_id">Login ID:</label>
+                <input type="text" id="login_id" name="login_id" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+
+            <div class="section-heading">Personal Particulars</div>
+            <div class="form-group">
+                <label for="salutation">Salutation:</label>
+                <input type="text" id="salutation" name="salutation">
+            </div>
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+            </div>
+            <div class="form-group">
+                <label for="middle_name">Middle Name:</label>
+                <input type="text" id="middle_name" name="middle_name">
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+            </div>
+            <div class="form-group">
+                <label for="resident_status">Resident Status:</label>
+                <select id="resident_status" name="resident_status">
+                    <option value="citizen">Citizen</option>
+                    <option value="non-citizen">Non-Citizen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country">
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="mobile_number">Mobile Number:</label>
+                <input type="tel" id="mobile_number" name="mobile_number">
+            </div>
+
+            <div class="section-heading">Account Particulars</div>
+            <div class="form-group">
+                <label for="account_number">15-Digit Account No:</label>
+                <input type="text" id="account_number" name="account_number">
+            </div>
+            <div class="form-group">
+                <label for="nick_name">Nick Name:</label>
+                <input type="text" id="nick_name" name="nick_name">
+            </div>
+            <div class="form-group">
+                <label for="fund_transfer">Fund Transfer:</label>
+                <input type="text" id="fund_transfer" name="fund_transfer">
+            </div>
+
+            <div class="section-heading">Declaration</div>
+            <div class="form-group">
+                <label for="declaration">I agree to the terms and conditions:</label>
+                <input type="checkbox" id="declaration" name="declaration" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-button">Submit</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+css
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.section-heading {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group select {
+    height: 35px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+.submit-button,
+.reset-button {
+    width: 48%;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reset-button {
+    background: #ccc;
+    margin-left: 4%;
+}
+
+11).Create link-pseudo classes using external css, to format links on the pages
+ styles.css
+
+/*Normal Link */
+a {
+    color: #007BFF; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover Link */
+a:hover {
+    color: #0056b3; /* Color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Visited Link */
+a:visited {
+    color: #750175; /* Color for visited links */
+}
+
+/* Active Link (when clicked) */
+a:active {
+    color: #FF0000; /* Color when active (clicked) */
+}
+
+html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Your Web Page Title</title>
+</head>
+
+<body>
+    <p><a href="https://example.com">This is a link</a></p>
+    <p><a href="https://example.com">This is another link</a></p>
+</body>
+
+</html>
+
+12).Create a dynamic pseudo class using HTML, CSS
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define a style for the element when not hovered */
+        .dynamic-element {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Define a style for the element when hovered */
+        .dynamic-element:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="dynamic-element">Hover over me!</div>
+</body>
+</html>
+
+           
